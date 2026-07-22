@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, serif">
+  <defs>
+    <radialGradient id="fireglow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f0c040" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f0c040" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- фон пещеры -->
+  <rect width="800" height="500" fill="#3a2a20"/>
+  <path d="M0,0 Q120,80 60,220 Q10,340 90,500 L0,500 Z" fill="#4a3628"/>
+  <path d="M800,0 Q690,90 740,230 Q790,350 710,500 L800,500 Z" fill="#4a3628"/>
+  <path d="M0,0 Q200,60 400,40 Q600,20 800,70 L800,0 Z" fill="#2c1f17"/>
+  <!-- пол -->
+  <path d="M0,430 Q200,410 400,425 Q600,440 800,420 L800,500 L0,500 Z" fill="#5a4432"/>
+
+  <!-- наскальный рисунок мамонта -->
+  <g stroke="#c98d4b" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M545,135 q20,-30 60,-28 q45,2 55,32 q8,25 -6,45 M545,135 q-18,4 -22,22 q-3,16 12,20 M550,182 l0,28 M585,186 l0,26 M622,184 l0,26 M650,178 l0,26"/>
+    <path d="M528,160 q-14,14 -4,28" />
+  </g>
+  <g stroke="#c98d4b" stroke-width="3" opacity="0.6" stroke-linecap="round">
+    <circle cx="540" cy="100" r="8" fill="none"/>
+    <path d="M540,86 v-8 M540,114 v8 M526,100 h-8 M554,100 h8"/>
+    <circle cx="668" cy="100" r="8" fill="none"/>
+    <path d="M668,86 v-8 M668,114 v8 M654,100 h-8 M682,100 h8"/>
+  </g>
+
+  <!-- костёр -->
+  <ellipse cx="230" cy="430" rx="130" ry="60" fill="url(#fireglow)"/>
+  <g stroke-linecap="round">
+    <line x1="190" y1="440" x2="270" y2="420" stroke="#6b4a2e" stroke-width="14"/>
+    <line x1="195" y1="418" x2="268" y2="442" stroke="#7d5836" stroke-width="14"/>
+  </g>
+  <path d="M230,360 q-20,30 -6,52 q8,14 22,16 q22,2 26,-20 q3,-16 -10,-34 q-8,18 -16,20 q4,-20 -16,-34 Z" fill="#e67e22"/>
+  <path d="M232,388 q-8,16 0,26 q6,8 14,6 q10,-3 8,-16 q-1,-8 -8,-16 q-3,8 -8,9 q1,-5 -6,-9 Z" fill="#f0c040"/>
+
+  <!-- Петя -->
+  <g>
+    <!-- ноги -->
+    <path d="M448,432 q4,18 -6,26 l24,0 q4,-14 -2,-26 Z" fill="#e8b88a"/>
+    <path d="M488,432 q4,18 -4,26 l24,0 q2,-14 -4,-26 Z" fill="#e8b88a"/>
+    <!-- туника из шкуры -->
+    <path d="M430,340 q40,-24 90,0 q14,50 6,96 l-100,0 q-8,-48 4,-96 Z" fill="#8b5a3c"/>
+    <path d="M436,436 l88,0 l-8,-14 l-14,12 l-12,-14 l-12,14 l-14,-12 l-14,14 Z" fill="#734a30"/>
+    <!-- руки -->
+    <path d="M432,352 q-26,20 -22,52 q2,10 12,8 q8,-2 8,-12 q-2,-22 12,-34 Z" fill="#e8b88a"/>
+    <path d="M518,352 q28,18 26,50 q-1,10 -11,9 q-9,-1 -9,-11 q0,-22 -14,-34 Z" fill="#e8b88a"/>
+    <!-- голова -->
+    <circle cx="475" cy="308" r="38" fill="#e8b88a"/>
+    <path d="M437,300 q-4,-34 38,-36 q42,2 38,36 q-12,-18 -38,-16 q-26,-2 -38,16 Z" fill="#4a3020"/>
+    <circle cx="461" cy="308" r="4.5" fill="#2c1f17"/>
+    <circle cx="489" cy="308" r="4.5" fill="#2c1f17"/>
+    <path d="M462,328 q13,10 26,0" stroke="#2c1f17" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <circle cx="450" cy="320" r="6" fill="#c0392b" opacity="0.35"/>
+    <circle cx="500" cy="320" r="6" fill="#c0392b" opacity="0.35"/>
+  </g>
+
+  <!-- игрушки: кость, камень, палка -->
+  <g>
+    <path d="M580,430 l70,-16" stroke="#f5efdf" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="577" cy="424" r="9" fill="#f5efdf"/>
+    <circle cx="584" cy="437" r="9" fill="#f5efdf"/>
+    <circle cx="647" cy="408" r="9" fill="#f5efdf"/>
+    <circle cx="654" cy="421" r="9" fill="#f5efdf"/>
+  </g>
+  <ellipse cx="705" cy="440" rx="26" ry="18" fill="#7f8c8d"/>
+  <ellipse cx="698" cy="434" rx="10" ry="6" fill="#95a5a6"/>
+  <g stroke="#6b4a2e" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M340,455 l55,-60"/>
+    <path d="M372,420 l20,-6"/>
+  </g>
+
+  <!-- подпись -->
+  <text x="400" y="486" text-anchor="middle" fill="#c9a97f" font-size="17" font-style="italic">Из игрушек у Пети были только кость, камень и палка с сучком…</text>
+</svg>

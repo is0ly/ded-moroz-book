@@ -94,5 +94,14 @@
 }
 
 @keyframes snow-fall {
-  to { transform: translateY(110vh) rotate(360deg); }
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+.content img {
+  display: block;
+  margin: 1.5em auto;
+  max-width: 90%;
+  border-radius: 16px;
 }
