@@ -1,0 +1,98 @@
+/* ===== Зимнее оформление книги «Жизнь Дедов Морозов» ===== */
+
+:root {
+  --winter-blue: #1e5f8e;
+  --winter-ice: #a8d8ea;
+  --winter-red: #c0392b;
+  --winter-gold: #f0c040;
+}
+
+/* Заголовки глав — морозный градиент */
+.content h1 {
+  background: linear-gradient(120deg, var(--winter-blue), #4fa3d1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 3px dotted var(--winter-ice);
+  padding-bottom: 0.3em;
+}
+
+.content h2 {
+  color: var(--winter-blue);
+}
+
+/* Обложка на титульной странице */
+.book-cover {
+  text-align: center;
+  padding: 3em 1em;
+  border: 3px double var(--winter-ice);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(168, 216, 234, 0.15), rgba(30, 95, 142, 0.08));
+  margin-bottom: 2em;
+}
+
+.book-cover h1 {
+  font-size: 2.6em;
+  border-bottom: none;
+}
+
+.book-cover .subtitle {
+  font-style: italic;
+  font-size: 1.2em;
+  color: var(--winter-blue);
+}
+
+/* Снежный разделитель в главах */
+.snow-divider {
+  text-align: center;
+  font-size: 1.4em;
+  color: var(--winter-ice);
+  letter-spacing: 0.8em;
+  margin: 1.5em 0;
+}
+
+/* Цитаты — морозные карточки */
+.content blockquote {
+  border-left: 4px solid var(--winter-ice);
+  background: rgba(168, 216, 234, 0.12);
+  border-radius: 0 12px 12px 0;
+  padding: 0.8em 1.2em;
+}
+
+/* Маркеры списков — снежинки */
+.content ul {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+.content ul li::before {
+  content: "❄ ";
+  color: var(--winter-ice);
+}
+
+/* Боковое меню */
+.chapter li.chapter-item a:hover {
+  color: var(--winter-red);
+}
+
+.chapter li.chapter-item a.active {
+  color: var(--winter-red);
+  font-weight: bold;
+}
+
+/* Снежинки (анимация из snow.js) */
+.snowflake {
+  position: fixed;
+  top: -2em;
+  color: var(--winter-ice);
+  user-select: none;
+  pointer-events: none;
+  z-index: 9999;
+  animation-name: snow-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes snow-fall {
+  to { transform: translateY(110vh) rotate(360deg); }
+}

@@ -1,0 +1,18 @@
+[book]
+title = "Жизнь Дедов Морозов"
+authors = ["Илья"]
+language = "ru"
+src = "src"
+description = "Тайная жизнь Дедов Морозов: от письма в холодильнике до летнего отпуска"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+additional-css = ["theme/custom.css"]
+additional-js = ["theme/snow.js"]
+# после создания репозитория впиши свою ссылку:
+# git-repository-url = "https://github.com/ВАШ_ЛОГИН/ded-moroz-book"
+
+[output.html.fold]
+enable = true
+level = 0
